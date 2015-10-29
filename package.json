@@ -1,0 +1,78 @@
+{
+  "name": "zocdocmovies",
+  "version": "0.0.2",
+  "description": "exercise for zocdoc, consumes movies api and allows user to compare them",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "tdd": "karma start --auto-watch --no-single-run",
+    "gh-pages": "webpack",
+    "dist": "webpack",
+    "dist-min": "webpack",
+    "dist-modules": "babel ./src --out-dir ./dist-modules",
+    "lint": "eslint . --ext .js --ext .jsx",
+    "preversion": "npm run lint && npm run test && npm run dist && npm run dist-min && git commit --allow-empty -am \"Update dist\"",
+    "prepublish": "npm run dist-modules"
+  },
+  "repository": {
+  },
+  "keywords": [
+  ],
+  "author": "Jonathan Matthey <mattheyj@gmail.com> (http://github.com/jonathanmatthey)",
+  "license": "MIT",
+  "main": "dist-modules",
+  "bugs": {
+  },
+  "homepage": "https://www.jonathanmatthey.com",
+  "dependencies": {
+    "classnames": "^2.1.5",
+    "lodash.sortbyorder": "^3.4.4"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "babel-plugin-react-transform": "^1.1.1",
+    "chai": "^3.3.0",
+    "clean-webpack-plugin": "^0.1.3",
+    "css-loader": "^0.18.0",
+    "eslint": "^1.5.0",
+    "eslint-plugin-react": "^3.4.2",
+    "file-loader": "^0.8.4",
+    "gh-pages": "^0.4.0",
+    "highlight.js": "^8.8.0",
+    "html-loader": "^0.3.0",
+    "html-webpack-plugin": "^1.6.1",
+    "isparta-instrumenter-loader": "^0.2.1",
+    "karma": "^0.13.10",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^0.5.2",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-sourcemap-loader": "^0.3.5",
+    "karma-spec-reporter": "0.0.20",
+    "karma-webpack": "^1.7.0",
+    "lodash": "^3.10.1",
+    "marked": "^0.3.5",
+    "mocha": "^2.3.3",
+    "phantomjs": "^1.9.18",
+    "phantomjs-polyfill": "0.0.1",
+    "plexus-form": "^0.1.3",
+    "plexus-validate": "^0.0.4",
+    "purecss": "^0.6.0",
+    "react": "^0.13.3",
+    "react-pagify": "^0.8.1",
+    "react-transform-hmr": "^1.0.1",
+    "schema2object": "^0.4.0",
+    "style-loader": "^0.12.4",
+    "title-case": "^1.1.1",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.11.0",
+    "webpack-merge": "^0.2.0"
+  },
+  "peerDependencies": {
+    "lodash": ">= 3.5.0 < 4.0.0",
+    "react": ">= 0.11.2 < 1.0.0"
+  }
+}

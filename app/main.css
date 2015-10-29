@@ -1,0 +1,95 @@
+.logo{
+    background-image:url(./images/logo.jpg);
+    display: inline-block;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+    width: 120px;
+    height: 76px;
+}
+
+.pagination > .selected > a,
+.pagination > .selected > span,
+.pagination > .selected > a:hover,
+.pagination > .selected > span:hover,
+.pagination > .selected > a:focus,
+.pagination > .selected > span:focus {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.per-page-container{
+    margin:20px 0;
+}
+
+.per-page-container input{
+    display: inline-block;
+    width:40px;
+    text-align:center;
+}
+
+.nav-tabs li{
+    cursor: pointer;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+
+.search-controls{
+    margin: 10px 0;
+}
+
+.search-controls label{
+    margin-bottom:0;
+}
+
+.search-controls span{
+}
+
+.search-controls select{
+    margin: 0 10px;
+    line-height: 20px;
+}
+
+.search-controls input{
+    margin-top:3px;
+    vertical-align: middle;
+}
+
+table tr td .actions{
+    width: 120px;
+    float:right;
+}
+
+table tr td .actions .btn{
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.compare-movies{
+    padding-top:10px;
+}
+
+.movie-card{
+    border:1px solid #eee;
+    padding:20px;
+    margin:15px 0 ;
+    border-radius:3px;
+}
+.movie-card h2{
+    margin-bottom:30px;
+    margin-top:0;
+}
+
+.error{
+    margin-top:20px;
+}
+
+table th{
+    cursor: pointer;
+}
